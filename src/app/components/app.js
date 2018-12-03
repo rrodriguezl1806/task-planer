@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { Layout } from 'antd';
 import './app.css';
+import Footer from './footer/footer';
+import Header from './header/header';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hello world!
-          </p>
-        </header>
-      </div>
-    );
-  }
+const App = (props) => {
+  return (
+    <React.Fragment>
+      <Layout>
+        <Header></Header>
+        <Footer></Footer>
+      </Layout>
+    </React.Fragment>
+  );
 }
 
 export default App;
