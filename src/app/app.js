@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout } from 'antd';
-import './app.css';
-import Footer from './footer/footer';
-import Header from './header/header';
+import './app.sass';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
 
 const App = (props) => {
   return (

@@ -43,6 +43,16 @@ module.exports = function (isProduction) {
                     use: [isProduction ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader']
                 },
                 {
+                    test: /\.sass$/,
+                    use: [
+                        { loader: isProduction ? MiniCssExtractPlugin.loader : 'style-loader' },
+                        { loader: 'css-loader' },
+                        {
+                            loader: 'sass-loader', options: {}
+                        },
+                    ]
+                },
+                {
                     test: /\.less$/,
                     use: [
                         { loader: isProduction ? MiniCssExtractPlugin.loader : 'style-loader' },
