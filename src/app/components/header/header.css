@@ -1,0 +1,7 @@
+.options {
+  float: right;
+}
+.notification, .plus {
+  font-size: 1.5em;
+  margin-left: 1em
+}

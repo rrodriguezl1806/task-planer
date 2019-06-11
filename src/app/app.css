@@ -1,0 +1,16 @@
+.ant-layout-header {
+  background-color: #ffffff;
+  padding-right: 0;
+  padding-left: 0
+}
+.ant-layout-sider {
+  background-color: #ffffff;
+}
+.ant-layout-sider-trigger {
+  background-color: #f5f5f5;
+  color: black
+}
+.title {
+  padding: 1.5em;
+  text-align: center
+}
