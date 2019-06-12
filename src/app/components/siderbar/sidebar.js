@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Layout, Menu, Icon } from 'antd';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 const { Sider } = Layout;
 
 function SidebarContent () {
@@ -18,12 +20,16 @@ function SidebarContent () {
 
       <Menu defaultSelectedKeys={['1']} mode="inline">
         <Menu.Item key="1">
-          <Icon type="pie-chart" />
-          <span>Home</span>
+          <Link to="/">
+            <Icon type="pie-chart" />
+            <span>Home</span>
+          </Link>
         </Menu.Item>
         <Menu.Item key="2">
-          <Icon type="calendar" />
-          <span>Calendar</span>
+          <Link to="/calendar">
+            <Icon type="calendar" />
+            <span>Calendar</span>
+          </Link>
         </Menu.Item>
         <Menu.Item key="3">
           <Icon type="unordered-list" />
