@@ -2,7 +2,7 @@ import React from "react";
 import { DatePicker } from 'antd';
 import moment from 'moment';
 import { Row, Col } from 'antd';
-import './home.css'
+import './home.sass'
 import Cards from './cards/cards'
 
 const { MonthPicker } = DatePicker;

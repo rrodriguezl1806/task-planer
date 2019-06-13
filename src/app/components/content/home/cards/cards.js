@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Layout, Row, Col, Checkbox, Icon } from 'antd';
-import './cards.css'
+import './cards.sass'
 
 export default function Cards({ type, title }) {
   return (

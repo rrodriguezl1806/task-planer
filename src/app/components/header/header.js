@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Icon } from 'antd';
-import './header.css';
+import './header.sass';
 const { Header } = Layout;
 
 function HeaderContent() {

@@ -47,9 +47,7 @@ module.exports = function (isProduction) {
                     use: [
                         { loader: isProduction ? MiniCssExtractPlugin.loader : 'style-loader' },
                         { loader: 'css-loader' },
-                        {
-                            loader: 'sass-loader', options: {}
-                        },
+                        { loader: 'sass-loader' },
                     ]
                 },
                 {
