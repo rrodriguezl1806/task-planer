@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Row, Col } from 'antd';
 
 // Components
 import FooterContent from './components/footer/footer';
@@ -17,8 +18,10 @@ function App() {
         <Layout>
           <HeaderContent></HeaderContent>
           <Layout.Content>
-            <Route exact path="/" component = { Home } />
-            <Route path="/calendar" component = { Calendar }/>
+            <Layout style={{ padding: '2em'}}>
+              <Route exact path="/" component = { Home } />
+              <Route path="/calendar" component = { Calendar }/>
+            </Layout>
           </Layout.Content>
           <FooterContent></FooterContent>
         </Layout>

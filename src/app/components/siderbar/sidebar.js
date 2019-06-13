@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Layout, Menu, Icon } from 'antd';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import './siderbar.css'
 const { Sider } = Layout;
 
 function SidebarContent () {
