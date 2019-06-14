@@ -10,8 +10,8 @@ function HeaderContent() {
                 <h2>Task Planer</h2>
             </div>
             <div className="options" style={{ display: 'inline-block', marginRight: '2em'}}>
-                <Icon type="notification" className="notification" />
-                <Icon type="plus-circle" className="plus"/>
+                <Icon type="bell" className="notification pointer"/>
+                <Icon type="plus-circle" className="plus pointer"/>
             </div>
         </Header>
     );

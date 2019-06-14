@@ -1,36 +1,38 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Layout, Row, Col, Checkbox, Icon } from 'antd';
 import './cards.sass'
 
-export default function Cards({ type, title }) {
+export default function Cards({ type, title, data }) {
   return (
     <Layout>
       <div className="title">
         <h3 className={type}>{title}</h3>
       </div>
       <div className="listTaks">
-        <Card></Card>
+        {data.map((task, index) => (
+          <Card key={index} task={task}></Card>
+        ))}
       </div>
     </Layout>
   )
 }
 
-function Card() {
+function Card({ index, task}) {
   return (
     <div>
-      <Checkbox id="" onChange={onChange} style={{ marginRight: '2em'}}>Task name</Checkbox>
+      <Checkbox id={index} onChange={onChange} style={{ marginRight: '2em'}}>{task.description}</Checkbox>
       <Icon type="edit" className="pointer" onClick={editTask} style={{ marginRight: '1em'}} />
       <Icon type="delete" className="pointer" onClick={deleteTask} />
     </div>
   )
 }
-function onChange(e) {
+const onChange = e => {
   console.log(`checked = ${e.target.checked}`);
 }
 
-function editTask() {
+const editTask = () => {
   console.log('edit');
 }
-function deleteTask() {
+const deleteTask = () => {
   console.log('delete');
 }
